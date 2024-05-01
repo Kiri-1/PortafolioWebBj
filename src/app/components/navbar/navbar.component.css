@@ -31,3 +31,41 @@
 .navbar a.active {
     color: rgb(0, 179, 179);
 }
+
+#menu-icon {
+    font-size: 3.6rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: #081b29;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        background: #081b29;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    }
+
+    .navbar a { 
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}

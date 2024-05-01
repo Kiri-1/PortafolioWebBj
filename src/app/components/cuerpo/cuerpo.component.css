@@ -3,6 +3,9 @@
     display: flex;
     align-items: center;
     padding: 0 10%;
+    background: url('../../../assets/homeBELEN.png') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .inicio-contenido {
@@ -33,7 +36,7 @@
     height: 50px;
 }
 
-.btn-box a {
+.btn-box .btn {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -53,38 +56,44 @@
     transition: .5s;
 }
 
-.btn-box a:hover{
+.btn-box .btn:hover{
     color: #0bcccc;
 }
 
-.btn-box a:nth-child(2) {
+.btn-box .btn:nth-child(2) {
     background: transparent;
     color: #11a3ab;
 }
 
-.btn-box a:nth-child(2):hover {
+.btn-box .btn:nth-child(2):hover {
     color: #081b29;
 }
 
-.btn-box a:nth-child(2)::before {
+.btn-box .btn:nth-child(2)::before {
     background: #0bcccc;
 }
 
-.btn-box a::before {
+.btn-box .btn::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
     z-index: -1;
     background: #081b29;
     transition: .5s;
 }
 
-.btn-box a:hover::before {
+.btn-box .btn:hover::before {
     width: 100%;
+}
 
+.icons {
+  position: absolute;
+  bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .wrapper {
@@ -98,17 +107,17 @@
   font-family: "Poppins", sans-serif;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: normal;
 }
 
 .wrapper .icon {
   position: relative;
-  background: #fff;
+  background: #820f37;
   border-radius: 50%;
   margin: 10px;
   width: 50px;
   height: 50px;
-  font-size: 18px;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +159,7 @@
   content: "";
   height: 8px;
   width: 8px;
-  background: #fff;
+  background: #000000;
   bottom: -3px;
   left: 50%;
   -webkit-transform: translate(-50%) rotate(45deg);
@@ -159,6 +168,7 @@
   -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 
 .wrapper .icon:hover .tooltip {
   top: -45px;
@@ -172,23 +182,38 @@
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background: #1877f2;
+.wrapper .git:hover,
+.wrapper .git:hover .tooltip,
+.wrapper .git:hover .tooltip::before {
+  background: #000000;
   color: #fff;
 }
 
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background: #1da1f2;
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #0077c0;
   color: #fff;
 }
 
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background: #e4405f;
+.wrapper .gmail:hover,
+.wrapper .gmail:hover .tooltip,
+.wrapper .gmail:hover .tooltip::before {
+  background: #fc0431;
   color: #fff;
+}
+
+.inicio-imgHover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: transparent;
+  transition: 3s;
+}
+
+.inicio-imgHover:hover {
+  background: #081b29;
+  opacity: .8;
 }
