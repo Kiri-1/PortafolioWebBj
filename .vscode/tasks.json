@@ -37,6 +37,16 @@
           }
         }
       }
+    },
+    {
+      "type": "Live Preview",
+      "workspacePath": "c:\\Users\\belen\\Documents\\Proyectos\\PortafolioWebBj",
+      "problemMatcher": [],
+      "label": "Live Preview: Ejecutar servidor",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
