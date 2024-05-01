@@ -1,92 +1,145 @@
 .inicio {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
-    background: url('../../../assets/homeBELEN.png') no-repeat;
-    background-size: cover;
-    background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: url('../../../assets/homeBELEN.png') no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .inicio-contenido {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .inicio-contenido h1 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
+  position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.inicio-contenido h1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .inicio-contenido h3 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #cc0b4f;
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: #cc0b4f;
+}
+
+.inicio-contenido h3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.3s;
 }
 
 .inicio-contenido p {
-    font-size: 16px;
-    margin: 20px 0 40px;
+  position: relative;
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+.inicio-contenido p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.6s;
 }
 
 .inicio-contenido .btn-box {
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.inicio-contenido .btn-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.9s;
+  z-index: 2;
 }
 
 .btn-box .btn {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #11a3ab;
-    border: 2px solid #11a3ab;
-    border-radius: 8px;
-    font-size: 19px;
-    color: #081b29;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: #11a3ab;
+  border: 2px solid #11a3ab;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
 }
 
-.btn-box .btn:hover{
-    color: #0bcccc;
+.btn-box .btn:hover {
+  color: #0bcccc;
 }
 
 .btn-box .btn:nth-child(2) {
-    background: transparent;
-    color: #11a3ab;
+  background: transparent;
+  color: #11a3ab;
 }
 
 .btn-box .btn:nth-child(2):hover {
-    color: #081b29;
+  color: #081b29;
 }
 
 .btn-box .btn:nth-child(2)::before {
-    background: #0bcccc;
+  background: #0bcccc;
 }
 
 .btn-box .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    background: #081b29;
-    transition: .5s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  background: #081b29;
+  transition: .5s;
 }
 
 .btn-box .btn:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .icons {
@@ -95,6 +148,20 @@
   display: flex;
   justify-content: space-between;
 }
+
+.icons::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 2.5s;
+  z-index: 2;
+}
+
 
 .wrapper {
   display: -webkit-inline-box;
@@ -211,9 +278,38 @@
   height: 100%;
   background: transparent;
   transition: 3s;
+  animation: manipActiveHover .1s forwards;
+  animation-delay: 4s;
+  pointer-events: none;
 }
 
 .inicio-imgHover:hover {
   background: #081b29;
   opacity: .8;
+}
+
+.inicio-imgHover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120%;
+  height: 100%;
+  background: #081b29;
+  animation: showRight 1s ease forwards;
+  animation-delay: 3s;
+  z-index: 100;
+}
+
+/* keyframes animation */
+@keyframes showRight {
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes manipActiveHover{
+  100% {
+    pointer-events: auto;
+  }
 }
