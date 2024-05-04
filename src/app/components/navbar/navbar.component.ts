@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -16,7 +17,11 @@ export class NavbarComponent {
     });
   }
 
+  constructor(private router: Router) { }
 
+  isInicioActive(): boolean {
+    return this.router.url === '/inicio';
+  }
 
   
 }

@@ -10,6 +10,7 @@
 
 .inicio-contenido {
   max-width: 600px;
+  z-index: 99;
 }
 
 .inicio-contenido h1 {
@@ -288,17 +289,14 @@
   opacity: .8;
 }
 
-.inicio-imgHover::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 120%;
-  height: 100%;
-  background: #081b29;
-  animation: showRight 1s ease forwards;
-  animation-delay: 3s;
-  z-index: 100;
+
+
+@media (max-width: 768px) {
+  .inicio-imgHover {
+    display: none;
+    background: #081b29;
+    opacity: .6;
+  }
 }
 
 /* keyframes animation */
