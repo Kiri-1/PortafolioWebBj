@@ -1,5 +1,5 @@
 <section class="sobremi" id="sobremi">
-    <h2 class="sobremi-titulo">Sobre <span>Me</span> </h2>
+    <h2 class="sobremi-titulo">Sobre <span>Mí</span> </h2>
     <div class="sobremi-img">
         <img src="../../../assets/sobremiBELEN.jpg" alt="">
         <span class="sobremi-circulo"></span>
@@ -9,11 +9,10 @@
         <h3>Frontend Developer!</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit odit tempore ullam deserunt. Eveniet
             aliquid nemo culpa hic provident voluptas quam, consequuntur repellat sequi, illum molestias, eligendi error
-            ex?</p>
-
-            
+            ex?</p>   
         </div>
-        <button class="readmore-btn">
+        <app-tecnologias *ngIf="mostrarTecnologias"></app-tecnologias>
+        <button class="readmore-btn" (click)="toggleTecnologias()">
             <span class="book-wrapper">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,6 +81,11 @@
                 ></path>
               </svg>
             </span>
-            <span class="text"> Leer más </span>
+            <span class="text">{{ textoBoton }}</span> 
           </button>
+
+
+          
+
+         
     </section>
