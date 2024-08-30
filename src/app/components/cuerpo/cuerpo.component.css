@@ -143,6 +143,14 @@
   width: 100%;
 }
 
+a{
+  text-decoration: none; 
+  color: inherit;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
 .icons {
   position: absolute;
   bottom: 4rem;

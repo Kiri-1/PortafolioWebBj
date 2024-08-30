@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CuerpoComponent } from './components/cuerpo/cuerpo.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { TecnologiasComponent } from './components/tecnologias/tecnologias.component';
@@ -17,7 +16,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     NavbarComponent,
     CuerpoComponent,
-    FooterComponent,
     SobreMiComponent,
     ProyectosComponent,
     TecnologiasComponent

@@ -12,7 +12,7 @@
   aspect-ratio: 1/1;
   border: 0.5rem solid transparent;
   border-radius: 1rem;
-  color: hsl(0 0% 10%);
+  color: #fff;
   background: none;
   
   display: grid;
@@ -20,14 +20,14 @@
   gap: 1rem;
   
   --shadow: 
-    -.5rem -.5rem 1rem hsl(0 0% 100% / .75),
-    .5rem .5rem 1rem hsl(0 0% 50% / .5);
+    -.5rem -.5rem 1rem hsl(0 0% 50% / .75),
+    .5rem .5rem 1rem hsl(0 0% 25% / .5);
   box-shadow: var(--shadow);
   outline: none;  
   transition: all 0.1s;
   
    &:hover, &:focus-visible {
-    color: hsl(10 80% 50%);
+    color: #cc0b4f;
     scale: 1.1
   }
   ::ng-deep &:active, &.active{
@@ -35,7 +35,7 @@
       var(--shadow),
       inset .5rem .5rem 1rem hsl(0 0% 50% / .5),
       inset -.5rem -.5rem 1rem hsl(0 0% 100% / .75);
-    color: hsl(10 80% 50%);
+    color: #cc0b4f;
     > i { font-size: 28cqi};
     > span { font-size: 13cqi};
   }
@@ -56,10 +56,19 @@ h1 {
   font-family: system-ui, sans-serif;
   font-size: 3rem;
 }
+
 .buttons {
   display: grid;
   width: min(75rem, 100%);
   margin-inline: auto;
   grid-template-columns: repeat(auto-fit, minmax(min(8rem, 100%), 1fr));
   gap: 2rem;
+}
+
+span {
+  font-size: 20px ;
+}
+
+i {
+  font-size: 30px;
 }

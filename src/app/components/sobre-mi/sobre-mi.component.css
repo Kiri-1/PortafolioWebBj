@@ -9,7 +9,6 @@
     padding-bottom: 6rem;
 }
 
-
 .sobremi-titulo {
     font-size: 5rem;
     margin-bottom: 3rem;
@@ -80,7 +79,7 @@ span {
   }
 
   .readmore-btn.clicked {
-    transform: translateY(20px); /* Ajusta la cantidad de desplazamiento según tu preferencia */
+    transform: translateY(20px); /* cantidad de desplazamiento */
   }
 
   .book-wrapper {
@@ -114,6 +113,7 @@ span {
       transform: rotateY(180deg) skewY(0deg);
     }
   }
+  
   .text {
     width: 105px;
     height: 100%;
